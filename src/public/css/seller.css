@@ -1,0 +1,40 @@
+.form-section.form-seller {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.form-section.form-seller .form {
+    width: 60%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.form-section.form-seller .form span {
+    text-align: center;
+}
+.form-section.form-seller .form .title {
+    text-transform: capitalize;
+    color: #d5d5d5;
+    margin-bottom: 30px;
+}
+.form-section.form-seller img {
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.form-section.form-seller .form .form-input,
+.form-section.form-seller .form textarea {
+    width: 70%;
+}
+
+.form-section.form-seller .form textarea {
+    height:8rem;    
+}
+
+.form-section.form-seller .form .apply-btn {
+    width:180px;
+    border-radius: 10px;
+}

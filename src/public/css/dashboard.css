@@ -1,0 +1,124 @@
+.add-product-section{
+    width: 100%;
+    height: 100vh;
+    background-color: #e9e9e9;
+    padding: 20px 50px;
+}
+.add-product {
+    width: 100%;
+    min-height: 60px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0 30px ;
+}
+#seller-greeting {
+     font-size: 16px;
+}
+.add-product .btn-add-product {
+    font-size:16px;
+    text-transform: capitalize;
+    color: #fff;
+    padding: 10px 20px;
+    background: #d5be8b;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.add-product .btn-add-product:hover {
+    opacity: 0.8;
+}
+
+
+/* Section PRODUCT SELLER */
+
+.seller-product {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 50px;
+
+}
+.no-product{
+    width: 100%;
+    display:block;
+    opacity: 0.7;
+    text-align: center;
+    height: 300px;
+    line-height: 300px;
+    font-size: 60px;
+    text-transform: capitalize;
+    display: none;
+}
+
+.seller-product-cart-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    gap: 15px;
+    padding: 15px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.seller-product-cart {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border: 15px solid #d5be8b;
+}
+.seller-product-cart:hover img {
+    opacity: 0.8;
+}
+.seller-product-cart:hover p {
+    opacity: 1;
+}
+.seller-product-cart:hover .seller-action {
+    opacity: 1;
+}
+.seller-product-cart img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+.seller-product-cart p {
+    position: absolute;
+    font-size: 32px;
+    font-weight: 550;
+    bottom: 0;
+    right: 50%;
+    transform: translate(50%);
+    opacity: 0;
+    color: #fff;
+}
+.seller-product-cart .seller-action {
+    position: absolute;
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 25px;
+    right: 20px;
+    top: 20px;
+    opacity: 0;
+    color: #fff;
+}
+.seller-product-cart .seller-action i {
+    cursor: pointer;
+}
+
+
+/* loader */
+.loader-seller {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+}
+.loader-seller img {
+    width: 200px;
+    height: 200px;
+    position: absolute;   
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+}
